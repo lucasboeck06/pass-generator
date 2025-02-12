@@ -1,0 +1,14 @@
+# Arquivos sensíveis
+*.env
+
+# Binários
+*.exe
+*.out
+*.test
+
+# Cache e pacotes do Go
+/bin/
+/pkg/
+
+# Logs
+*.log

@@ -96,10 +96,8 @@ Arquitetura:
 │    ├── /cmd/                 # Ponto de entrada da aplicação
 │    │    ├── main.go          # Arquivo principal da API
 │    │    ├── server.go        # Inicialização do servidor e rotas
-│    ├── /config/              # Configuração do banco e variáveis
-│    │    ├── config.go        # Carrega .env e conecta ao banco
 │    ├── /controllers/         # Controladores (lógica de negócio)
-│    │    ├── password.go      # Gerador de senhas e links
+│    │    ├── password.go      # Controle de endpoint
 │    │    ├── auth.go          # Futuro: autenticação
 │    ├── /models/              # Modelos de banco de dados
 │    │    ├── password.go      # Estrutura e métodos do modelo Password
@@ -113,10 +111,9 @@ Arquitetura:
 │    │    ├── migrations.sql   # Script de migração do banco
 │── /frontend/                 # Código-fonte do frontend
 │    ├── index.html            # Página inicial
-│    ├── senha.html            # Página de visualização da senha
 │    ├── style.css             # Estilização
 │    ├── script.js             # Requisições para a API
 │── /deploy/                   # Infraestrutura
 │    ├── docker-compose.yml    # Configuração do PostgreSQL e Go
-│── .env                       # Variáveis de ambiente
+│    ├── .env                  # Variáveis de ambiente
 │── README.md                  # Documentação do projeto
